@@ -11,8 +11,10 @@ header {
   padding: 20px;
   text-align: center;
   border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
 }
 
+/* Main Content Styles */
 main {
   margin-top: 20px;
   padding: 20px;
@@ -20,6 +22,7 @@ main {
   border-radius: 8px;
 }
 
+/* Footer Styles */
 footer {
   margin-top: 20px;
   background-color: #333;
@@ -27,12 +30,29 @@ footer {
   padding: 10px;
   text-align: center;
   border-radius: 8px;
+  transition: background-color 0.3s ease; /* Added transition for footer background */
 }
 
 /* Media Query to hide header on mobile */
 @media only screen and (max-width: 600px) {
   .hide-on-mobile {
-    font-size: 30px;  /* Hide the header on mobile screens */
+    opacity: 0; /* Fade out the header */
+    transform: translateY(-20px); /* Move the header up slightly */
+    height: 0; /* Collapse height */
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Hide overflow */
+    transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease; /* Smooth transition */
+  }
+
+  header {
+    background-color: #4CAF50; /* Keep the background color for the header */
+  }
+
+  footer {
+    background-color: #444; /* Darker footer on mobile */
   }
 }
-
+hide-on-mobile{
+  transition: width 2s linear 1s;
+  
+}
