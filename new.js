@@ -57,10 +57,40 @@ function printMessage(message) {
     const resultDiv = document.getElementById("result");
     // Set the inner HTML to the message
     resultDiv.innerHTML = message;
+
 }
 
 // Add an event listener to the link
 document.getElementById("helloLink").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default link behavior
-    printMessage("Hello, World!"); // Call the function with the message
+    printMessage("Hello, World!"); // Call 
+    // the function with the message
+    const person = {
+        name: 'Alice',
+        age: 25,
+        city: 'New York'
+    };
+    
+    for (const key in person) {
+        if (person.hasOwnProperty(key)) {
+            console.log(`${key}: ${person[key]}`);
+        }
+    }
+    const numbers = [10, 20, 30, 40, 50];
+
+for (const index in numbers) {
+    console.log(`Index: ${index}, Value: ${numbers[index]}`);
+}
+const numbers12 = [1, 2, 3];
+
+async function processNumbers() {
+    numbers.forEach(async (number12) => {
+        const result = await someAsyncFunction(number);
+        console.log(result);
+    });
+    
+}
+
+
+// This won't work as expected because forEach doesn't wait for async operations
 });

@@ -1,38 +1,38 @@
-.a{
-    background-color: red;
-}
-.class1 .class2{
-    background-color: green;
-} 
-.class1 .class3{
-    background-color: red;
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
-/* Selects all elements with the "title" attribute */
-[title] {
-    color: red;
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+main {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Media Query to hide header on mobile */
+@media only screen and (max-width: 600px) {
+  .hide-on-mobile {
+    font-size: 30px;  /* Hide the header on mobile screens */
   }
-  /* Selects all anchor tags <a> with a href attribute equal to "https://www.example.com" */
-a[href="https://www.example.com"] {
-    color: green;
-  }
-  /* Selects all elements with a class that contains the word "primary" */
-[class~="primary"] {
-    background-color: lightblue;
-  }
-  /* Selects all <input> elements whose "name" attribute starts with "user" */
-input[name^="user"] {
-    border: 2px solid blue;
-  }
-  /* Selects all images with a "src" that ends with ".jpg" */
-img[src$=".jpg"] {
-    border: 2px solid red;
-  }
-/* Selects all links whose "href" contains the word "example" */
-a[href*="example"] {
-    font-weight: bold;
-  }
-    
-  
-  
-  
+}
+

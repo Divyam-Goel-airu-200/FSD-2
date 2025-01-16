@@ -1,0 +1,196 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSD</title>
+</head>
+<body >
+    <div class="a">
+    <a href="https://www.w3schools.com/html/html_css.asp" target="_top">w3schools--This is First html file</a></div>
+     
+    <div class="class1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt cupiditate inventore obcaecati fugit, explicabo perferendis magnam ipsam maiores, similique distinctio, quo officia.</p>
+        <div class="class2">
+           This is my file.
+           <div class="class3">
+            <p>Lorem, ipsum dolor.</p>
+           </div>
+        </div>
+    </div>
+    <p title="This is a tooltip">Hover over me!</p>
+    <a href="https://www.example.com">Visit Example</a>
+    <a href="https://www.test.com">Visit Test</a>
+    <div class="button primary">Click me</div>
+<div class="button secondary">Don't click me</div>
+
+<input type="text" name="username">
+<input type="text" name="useremail">
+<input type="text" name="password">
+
+
+
+
+<img src="photo1.jpg" alt="Photo 1">
+<img src="photo2.png" alt="Photo 2">
+<img src="photo3.jpg" alt="Photo 3">
+
+<a href="https://www.example.com">Example Link</a>
+<a href="https://www.test.com">Test Link</a>
+
+<div class="class111">
+    <p></p>
+    </div>
+    <div> Hello World! </div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos accusamus debitis quidem doloribus, harum, quibusdam fugit quaerat esse dolore dolores dolorem sapiente?</p></div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations with Buttons</title>
+    <script src="functions.js" defer></script>
+</head>
+<body>
+    <h1>Math Operations</h1>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" required>
+    </div>
+    <div>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" required>
+    </div>
+    <div>
+        <button onclick="performOperation('add')">Add</button>
+        <button onclick="performOperation('subtract')">Subtract</button>
+        <button onclick="performOperation('multiply')">Multiply</button>
+        <button onclick="performOperation('divide')">Divide</button>
+    </div>
+    <div id="results"></div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations with Buttons</title>
+    <script src="functions.js" defer></script>
+</head>
+<body>
+    <h1>Math Operations</h1>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" required>
+    </div>
+    <div>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" required>
+    </div>
+    <div>
+        <button onclick="performOperation('add')">Add</button>
+        <button onclick="performOperation('subtract')">Subtract</button>
+        <button onclick="performOperation('multiply')">Multiply</button>
+        <button onclick="performOperation('divide')">Divide</button>
+    </div>
+    <div id="results"></div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call JS Function from Object</title>
+</head>
+<body>
+
+    <h1>Call JavaScript Function from Object</h1>
+    <button id="infoButton">Show Information</button>
+
+    <script>
+        // Define the information function
+        function information() {
+            console.log("The information provided is:");
+            for (let i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+
+        // Create an object that contains the method
+        const myObject = {
+            showInfo: function() {
+                // Call the information function with some arguments
+                information("Hello, World!", 42, { name: "Alice", age: 30 }, [1, 2, 3, 4, 5]);
+            }
+        };
+
+        // Add an event listener to the button
+        document.getElementById("infoButton").addEventListener("click", function() {
+            myObject.showInfo(); // Call the method from the object
+        });
+    </script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call JS Function from Object</title>
+</head>cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+<body>
+
+    <h1>Call JavaScript Function from Object</h1>
+    <button id="infoButton">Show Information</button>
+
+    < A container to display the information -->
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Call JS Function from Object</title>
+    </head>
+    <body>
+    
+        <h1>Call JavaScript Function from Object</h1>
+        <button id="infoButton">Show Information</button>
+    
+         A container to display the information -->
+        <!-- <div id="output"></div>
+    
+        <script>
+            // Define the information function
+            function information() {
+                // Get the output container by its ID
+                const outputContainer = document.getElementById("output");
+                
+                // Clear any previous output
+                outputContainer.innerHTML = "";
+    
+                // Add the new output to the container
+                outputContainer.innerHTML += "<strong>The information provided is:</strong><br>";
+    
+                // Loop through the arguments and display each one
+                for (let i = 0; i < arguments.length; i++) {
+                    outputContainer.innerHTML += arguments[i] + "<br>";
+                }
+            }
+    
+            // Create an object that contains the method
+            const myObject = {
+                showInfo: function() {
+                    // Call the information function with some arguments
+                    information("Hello, World!", 42, { name: "Alice", age: 30 }, [1, 2, 3, 4, 5]);
+                }
+            };
+    
+            // Add an event listener to the button
+            document.getElementById("infoButton").addEven
+    

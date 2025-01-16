@@ -1,54 +1,89 @@
-// functions.js
+// // functions.js
 
-// Function to add two numbers
-function add(a, b) {
-    return a + b;
-}
+// // Function to add two numbers
+// function add(a, b) {
+//     return a + b;
+// }
 
-// Function to subtract two numbers
-function subtract(a, b) {
-    return a - b;
-}
+// // Function to subtract two numbers
+// function subtract(a, b) {
+//     return a - b;
+// }
 
-// Function to multiply two numbers
-function multiply(a, b) {
-    return a * b;
-}
+// // Function to multiply two numbers
+// function multiply(a, b) {
+//     return a * b;
+// }
 
-// Function to divide two numbers
-function divide(a, b) {
-    if (b === 0) {
-        return 'Error: Division by zero';
+// // Function to divide two numbers
+// function divide(a, b) {
+//     if (b === 0) {
+//         return 'Error: Division by zero';
+//     }
+//     return a / b;
+// }
+
+// // Function to perform operations based on button clicks
+// function performOperation(operation) {
+//     // Get input values
+//     const num1 = parseFloat(document.getElementById('num1').value);
+//     const num2 = parseFloat(document.getElementById('num2').value);
+//     let result;
+
+//     // Perform the selected operation
+//     switch (operation) {
+//         case 'add':
+//             result = add(num1, num2);
+//             break;
+//         case 'subtract':
+//             result = subtract(num1, num2);
+//             break;
+//         case 'multiply':
+//             result = multiply(num1, num2);
+//             break;
+//         case 'divide':
+//             result = divide(num1, num2);
+//             break;
+//         default:
+//             result = 'Invalid operation';
+//     }
+
+//     // Display the result
+//     const resultsDiv = document.getElementById('results');
+//     resultsDiv.innerHTML = `<h2>Result:</h2><p>${result}</p>`;
+// }
+// let age = 16;
+// let message = age >= 18 ? "Adult" : "Minor";
+// console.log(message); // Output: Minor
+// let fruits = ["apple", "banana", "cherry"];
+// console.log(fruits[0]); // Output: apple
+// console.log(fruits[1]); // Output: banana
+// console.log(fruits[2]); // Output: cherry
+// Create an empty array to hold the inputs
+// Create an array with some elements
+// let myArray = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
+
+// // Function to print elements of the array
+// function printArrayElements(array) {
+//     console.log("Array elements:");
+//     for (let i = 0; i < array.length; i++) {
+//         console.log(array[i]);
+//     }
+// }
+
+// // Call the function to print the elements
+// printArrayElements(myArray);
+// Function to print all arguments passed to it
+function information() {
+    console.log("The information provided is:");
+    for (let i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
     }
-    return a / b;
 }
 
-// Function to perform operations based on button clicks
-function performOperation(operation) {
-    // Get input values
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    let result;
-
-    // Perform the selected operation
-    switch (operation) {
-        case 'add':
-            result = add(num1, num2);
-            break;
-        case 'subtract':
-            result = subtract(num1, num2);
-            break;
-        case 'multiply':
-            result = multiply(num1, num2);
-            break;
-        case 'divide':
-            result = divide(num1, num2);
-            break;
-        default:
-            result = 'Invalid operation';
-    }
-
-    // Display the result
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = `<h2>Result:</h2><p>${result}</p>`;
-}
+// Example usage of the function
+information("Hello, World!"); // Passing a string
+information(42);                // Passing a number
+information({ name: "Alice", age: 30 }); // Passing an object
+information([1, 2, 3, 4, 5]);  // Passing an array
+information("Multiple", "Arguments", "Test"); // Passing multiple arguments
